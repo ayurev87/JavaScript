@@ -4,7 +4,7 @@ function getCalculyatorCube(length){
 }
 
 let length = Number(prompt('Введите любое целое число', 5));
-console.log(`Куб числа ${length}`)
+alert(`Куб числа ${length} = ${getCalculyatorCube(length)}`);
 
 console.log('Задание 2');
 function getTaxDeduction(finance){
@@ -29,3 +29,20 @@ const num2 = getUserNum();
 const num3 = getUserNum();
 
 alert(`один из трех числа максимальное число  - ${getMax(num1, num2, num3)}`);
+
+console.log('Задание 4');
+
+const getSum = (frist, second) => frist+second;
+const getDiff = (frist, second) => frist === second? 0 : frist - second;
+const getMulti = (frist, second) => frist * second;
+const getQuotient = (frist, second) => second === 0 ? 0 : frist / second;
+
+function getUserCalc(oper , frist , second) {
+   return oper === '+' ?  getSum(frist, second) : oper === '-' ? getDiff(frist,second): oper === '*' ? getMulti(frist, second): oper === '/'? getQuotient(frist, second) : 'Вввод ошибки неизвестно операции';
+}
+
+let a = Number(prompt('Введите первое число'));
+let b = Number(prompt('Введите второе число'));
+let oper = prompt('какая операция из них соврешает: + , - , * , / ');
+
+alert(`Результат действия: ${a} ${oper} ${b} = ${getUserCalc(oper, a, b)}`);
