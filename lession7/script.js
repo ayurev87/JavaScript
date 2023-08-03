@@ -72,7 +72,7 @@ alert(`Запомни цифры ${numbers}`);
 console.log(numbers.pop());
 console.log(numbers); */
 
-const word = 'example';
+/* const word = 'example';
 
 const arrWord = word.split('');
 
@@ -81,4 +81,35 @@ const upWord = arrWord.pop();
 // console.log(upWord.toLocaleUpperCase());
 
 arrWord.push(upWord.toLocaleUpperCase());
-console.log(arrWord.join(''));
+console.log(arrWord.join('')); */
+
+/* let arr =[1,2,3];
+arr.push = 4;
+console.log(arr); */
+
+/* const arr = [5, 1, 2, 3, 7, 19, 7 , 13 , 3];
+
+for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    if (element>=5 ) {
+        console.log(element);
+    } else {
+        continue;
+    }
+    
+    
+}
+console.log(arr.indexOf('3')); */
+
+const arrAnswers = ['елка', 'ёлка', 'ель'];
+const userAnswers = prompt('Зимой и летом одним цветом');
+
+for (let i = 0; i < arrAnswers.length; i++) {
+    const element = arrAnswers[i];
+    if (element === userAnswers){
+        console.log('Молодец');
+        break;
+    }else{
+        continue;
+    }
+}
