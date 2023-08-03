@@ -1,3 +1,33 @@
+/* let count = 0;
+while (count < 3) {
+    console.log('hello');
+    count++;
+} */
+
+/* for (let i = 0; i < 3; i++){
+    console.log('Hello');
+} */
+/* for (let j = 0; j <=2; j++){
+    console.log(j);
+} */
+
+// for (;;) {  // бесконечность цикл
+//     console.log('hel');
+// }
+
+/* let pass;
+let count = 0;
+do {
+    pass = Number(prompt('Введите пароль'));
+    count++;
+    if (count >= 2){
+        alert('Неверный пароль');
+    if ( count >= 5) 
+    {
+        alert('многие раза вводите неверный пароль');
+    }};
+} while (pass !== 234);
+ */
 // let pass;
 // let count =0;
 
@@ -46,4 +76,9 @@ const word = 'example';
 
 const arrWord = word.split('');
 
-console.log(arrWord.pop);
+// console.log(arrWord.pop().toUpperCase);
+const upWord = arrWord.pop();
+// console.log(upWord.toLocaleUpperCase());
+
+arrWord.push(upWord.toLocaleUpperCase());
+console.log(arrWord.join(''));
