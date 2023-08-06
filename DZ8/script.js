@@ -2,7 +2,7 @@
 // 1 Задание
 console.log('1 задание');
 for (let i = 0; i < 11; i++) {
-    console.log(i===0? '0 - это ноль' : i%2 !== 1 ? i + '- четное число': i + '- нечетное число');
+    console.log(i===0? '0 - это ноль' : i%2 === 0 ? i + '- четное число': i + '- нечетное число');
 }
 console.log('\n\n');
 
@@ -25,8 +25,8 @@ const getArrayRandom = (count) => {
 }
 
 const getSum = (array) => {
-    let sum = array[0];
-    for (let i = 1; i< array.length; i++) {
+    let sum = 0;
+    for (let i = 0; i< array.length; i++) {
         sum  += array[i];
         
     }
@@ -34,8 +34,8 @@ const getSum = (array) => {
 }
 
 const getMin = (array) => {
-    let min = array[0];
-    for (let i = 1; i< array.length; i++ )
+    let min = Infinity;
+    for (let i = 0; i< array.length; i++ )
      {
         if(array[i] < min) min = array [i];
      }
