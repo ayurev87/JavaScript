@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <script>
+     /*        const product = {
+                name: 'Стол',
+                productPrice: 2000,
+                count: 2,
+                userRegistred : false,
+                reg: function(){
+                    this.userRegistred = true;
+                },
+                countProduct: function(){
+                    if (this.count > 0){
+                    console.log('Вы можете купить данный товар');}
+                    else {
+                        console.log('Данный товар нельзя добавить в корзину');
+                    }
+                },
+                buyProduct: function(){
+                    if(this.userRegistred){
+                        console.log('Товар в коризне');
+                    } else {
+                        console.log('Вам необходимо зарегистрироваться сначала выполнить product.reg()');
+                    }
+                }
+
+            }
+            product.buyProduct(); */
+           /*  console.log(product);
+            const productNew = {
+                productImg: 'photo.png',
+                productText: 'Крутое кресло',
+            }
+            console.log(productNew.productText); //Крутое кресло
+            let text = productNew.productText;
+            productNew.link = 'product/linkname.html'; //добавить  нового свойства link в объекте
+            delete productNew.productText; // удалить свойства из объекта
+
+            const array = [];
+            array[0] = product;
+            array[1] = productNew;
+            console.log(array);
+
+            function getCopy(currentArray){
+                let newArray = [];
+                for(let i = 0; i < currentArray.length; i++ ){
+                    newArray[i] = currentArray[i];
+                }
+                return newArray;
+            }
+
+             const newArray = [];
+               getCopy(product);
+             newArray.color = 'red';
+             console.log(product);
+             console.log(newArray); */
+
+    /*          const productTest = {
+                text: 'hello',
+                price: 1000
+             }
+             for (const key in productTest) {
+              console.log(key);
+             }  //text, price
+
+             for (const key in productTest) {
+              console.log(productTest.key);
+             }  //undefined
+            // productTest.'text'; - не реагирует
+            productTest['text']; //с квадратными скобками , будет показывать Hello
+            for (const key in productTest) {
+               console.log(productTest[key]);
+            } */
+
+            const array =[1,2,3,4,10,15];
+            array.map(salary => salary *2 ); //[2,4,6,8,20,30];
+            console.log(array); //1,2,3,4,10,15
+            const arrayUp =  array.map(salary => salary *2 );
+            console.log(arrayUp); //[2,4,6,8,20,30];
+            array.filter(item =>item >= 10); //[10,15];
+            array.some(item => item >= 10); //true
+            array.some(item => item >= 20); //false
+            array.reduce((a,b) => a+b); //35
+            array.reduce((a,b) => a+b)/array.length;//5.83333 (среднее арифметическое)
+        </script>
+    </body>
+</html>
