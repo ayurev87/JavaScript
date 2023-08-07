@@ -21,15 +21,7 @@ delete user.middle;
 const {name, supname, age} = user;
 console.log(`${name} ${supname} - ${age} лет`); */
 
-/* const arr1 = ['пн','вт','ср','чт','пт','сб','вс'];
-const arr2 = [1,2,3,4,5,6,7];
-
-const obj = {};
-
-for (const key  of arr2)  {
-    obj[arr2[key -1 ]] = arr1[key -1];
-}
-console.log(obj); */
+/*  */
 
 /* const obj = {x:1, y:2, z: 3};
 // for (const key in obj) {
